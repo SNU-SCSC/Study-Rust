@@ -14,10 +14,8 @@ fn main() {
     x = 6;
     println!("The value of x is: {x}");
 
-
 // 상수 선언방식
     const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
-
 
 // Shadowing
     let x = 5;
@@ -41,13 +39,11 @@ fn main() {
 
 // Rust는 statically typed language: compile time에 모든 변수들의 타입을 알아야 한다.
     let guess: u32 = "42".parse().expect("Not a number!");
-
-
     let a: u8 = 200;
     let b: u8 = 200;
     // let d: u8 = 300;
-    let c: u8 = a*b;
-    println!("{c}");
+    // let c: u8 = a*b;
+    // println!("{c}");
 
 // 자료구조 - 튜플
     let x: (i32, f64, u8) = (500, 6.4, 1);
@@ -64,7 +60,6 @@ fn main() {
 
 // 함수 정의해서 사용하는 예시
     let x = plus_one(5);
-
     println!("The value of x is: {x}");
 
 }
